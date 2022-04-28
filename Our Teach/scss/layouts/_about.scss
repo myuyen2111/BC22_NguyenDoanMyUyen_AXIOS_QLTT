@@ -1,0 +1,42 @@
+#about {
+    .about_us {
+      position: relative;
+      background-image: url("./../../images/yellow_top_wave_01.png");
+      background-size: 1500px;
+      background-repeat: no-repeat;
+      .row {
+        padding: 100px 0 0 0;
+        justify-content: space-between;
+        align-items: center;
+  
+        .content {
+          p {
+            @include text(
+              1.1rem,
+              ("Montserrat", Arial, Helvetica, sans-serif),
+              600,
+              $primary_color
+            );
+          }
+          h1 {
+            @include text(
+              57px,
+              ("Montserrat", Arial, Helvetica, sans-serif),
+              bold,
+              $text_color
+            );
+          }
+        }
+      }
+      @media (max-width: 991px) {
+        background-size: 600px 150px;
+        .container {
+          padding: 120px 30px 120px 30px;
+          .row {
+            gap: 50px;
+          }
+        }
+      }
+    }
+}
+    
